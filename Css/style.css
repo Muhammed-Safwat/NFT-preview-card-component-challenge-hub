@@ -1,0 +1,124 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    background-color: hsl(217, 54%, 11%);
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.container .card{
+    background-color: hsl(216, 50%, 16%);
+    height:70%;
+    padding:20px;
+    border-radius:15px;
+    -webkit-border-radius:15px;
+    -moz-border-radius:15px;
+    -ms-border-radius:15px;
+    -o-border-radius:15px;
+    max-width: 300px;
+    box-shadow:0px 0px 30px 50px hsl(217deg 54% 9%);
+}
+
+    @media(max-width:552px){
+        .container .card { 
+                height: 62%;
+            }
+        }
+.container .card .image{
+    background-image: url(../images/image-equilibrium.jpg);
+    height:60%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.container .card .text{
+    position:relative;
+}
+.container .card .text h3{
+    position:relative;
+    font-weight:100px;
+    letter-spacing:1px;
+    margin-top: 10px;
+}
+.container .card .text p{
+    margin-top:15px;
+    color:hsla(215, 52%, 70%, 0.5);
+    font-size: 15px;
+}
+.container .card .time{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-top:15px;
+    font-size:14px;
+    
+}
+.container .card .time span {
+    padding-right: 5px;
+}
+.container .card .time .eth span{
+    color:hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.container .card .time div{
+    display:flex;
+    justify-content:center;
+}
+
+.container .card .text::after{
+    position: absolute;
+    content: '';
+    height: 1px;
+    background:hsla(215, 52%, 70%, 0.25);
+    width:100%;
+    margin-top:15px;
+    
+}
+.container .card .author{
+    margin-top:35px;
+    display:flex;
+    align-items:center;
+    letter-spacing:1px;
+    word-spacing:1px;
+}
+
+.container .card .author .img{
+    background-image: url(../images/image-avatar.png);
+    height:25px;
+    width:25px;
+    background-size:cover;
+    margin-right: 15px;
+    border:1px solid white;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.container .card .author p{
+    font-size:14px;
+    color:hsl(215, 51%, 70%);
+}
+.container .card .author a {
+    text-decoration:none;
+    font-size:14px;
+    padding:2px;
+    
+}
+.card .text .time .days{
+    color:hsl(215, 51%, 70%);
+}
